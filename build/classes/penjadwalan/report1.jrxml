@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4c4bf3f7-f6d2-4d24-bf05-b57238089e18">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="51"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT  jadwal.idjadwal,pembelajaran.nama_kelas,waktu.hari,waktu.waktu_mulai,waktu.waktu_selesai,pembelajaran.nama_pelajaran,pembelajaran.nama_pengajar FROM jadwal JOIN waktu ON waktu.idwaktu = jadwal.idwaktu JOIN pembelajaran ON pembelajaran.idpembelajaran = jadwal.idpembelajaran]]>
+	</queryString>
+	<field name="idjadwal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_kelas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hari" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="waktu_mulai" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="waktu_selesai" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_pelajaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_pengajar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="103" splitType="Stretch">
+			<staticText>
+				<reportElement x="195" y="63" width="176" height="20" uuid="7f10e5c5-0115-499d-86f9-236f1da3f312"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[PENJADWALAN SMA N 2 SLEMAN]]></text>
+			</staticText>
+			<image>
+				<reportElement x="22" y="10" width="91" height="93" uuid="e5c2a9d4-51ac-4e72-a999-06e8a5b1ba14"/>
+				<imageExpression><![CDATA["/home/elhazard/Downloads/sq7_ECUz_400x400.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="132" y="83" width="423" height="20" uuid="418d61a2-76a8-4cce-ad46-fc0bdafee162"/>
+				<text><![CDATA[Alamat : Brayut Pandoharjo, Sleman 55512, Telp. (0274) 869774, 869775]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="23" width="206" height="20" uuid="b1091960-b7ab-4bc4-9099-8e99d5de6d0d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[PEMERINTAH KABUPATEN SLEMAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="156" y="43" width="267" height="20" uuid="a858edb3-4b97-45c4-a866-098dfc723955"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[DINAS PENDIDIKAN PEMUDA DAN OLAH RAGA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="11" backcolor="#000000" uuid="4a06b0ed-f499-40fd-9d64-238638e624e9"/>
+			</rectangle>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="2" width="554" height="20" uuid="27f767f7-4372-47c1-a0e9-c33f58a31a02"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="41" height="20" uuid="d5cd8005-a4a5-4da7-9663-1e0acd048ba0"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Kelas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="0" width="59" height="20" uuid="85185151-4b6f-460b-b716-f1047dc63f31"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Hari]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="123" y="0" width="72" height="20" uuid="b96133b6-a134-4326-9abc-230735aceb57"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Waktu Mulai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="214" y="0" width="82" height="20" uuid="340304fc-e245-4d51-b712-56a482a56e57"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Waktu Selesai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="323" y="0" width="100" height="20" uuid="5c8255e8-596a-4a7f-b47a-56687c791a8a"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nama Pelajaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="454" y="0" width="100" height="20" uuid="481fa37c-984c-44a7-8277-3edee18365c4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Pengajar]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="41" height="20" uuid="10f46a59-23c0-4f26-8521-529fa9dc8fb4"/>
+				<textFieldExpression><![CDATA[$F{nama_kelas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="54" y="0" width="59" height="20" uuid="6ac5d572-2fb8-41bc-9618-5b9a0fc1844a"/>
+				<textFieldExpression><![CDATA[$F{hari}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="123" y="0" width="72" height="20" uuid="8ecae531-b60f-4149-9f26-dbc8900632ce"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{waktu_mulai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="214" y="0" width="82" height="20" uuid="430f64ef-5a10-4434-82c7-313b98211c0f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{waktu_selesai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="323" y="0" width="100" height="20" uuid="cf29fefa-6357-4064-8f8f-c9fa6a48ddd3"/>
+				<textFieldExpression><![CDATA[$F{nama_pelajaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="454" y="0" width="100" height="20" uuid="fb4770b8-a25f-44d5-b070-297af2460723"/>
+				<textFieldExpression><![CDATA[$F{nama_pengajar}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="26" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="15" width="555" height="11" backcolor="#000000" uuid="2b639a71-21b0-4de0-b935-616a17a745ad"/>
+			</rectangle>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement x="280" y="13" width="16" height="20" uuid="179ac2a1-1253-40c8-863d-76e1dde005c0"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="161" splitType="Stretch">
+			<staticText>
+				<reportElement x="405" y="141" width="149" height="20" uuid="5d485d73-c0c8-40a0-b65e-d7b67e93be78"/>
+				<text><![CDATA[NIP 19660813 198803 1 003]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="405" y="121" width="149" height="20" uuid="48475860-e0ec-4b53-a349-fd68a7a1647c"/>
+				<text><![CDATA[Pembina Utama Muda, lV/c]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="405" y="101" width="100" height="20" uuid="247fefed-3a93-4d52-9621-c7e5b61855f9"/>
+				<text><![CDATA[Drs. Dahari, MM.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="41" width="149" height="20" uuid="c78afeef-b383-4909-a1c3-125b00214e7c"/>
+				<text><![CDATA[Kepala Sekolah SMA N Sleman]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
