@@ -185,7 +185,7 @@ public class menu extends javax.swing.JFrame {
         f.setSelected(true);
             f.getDesktopPane().getDesktopManager().deiconifyFrame(f);
             f.getDesktopPane().getDesktopManager().maximizeFrame(f);
-            f.getDesktopPane().getDesktopManager().minimizeFrame(f);
+            //f.getDesktopPane().getDesktopManager().minimizeFrame(f);
         } catch (SQLException ex) {
             Logger.getLogger(menu.class.getName()).log(Level.SEVERE, null, ex);
         } catch (PropertyVetoException ex) {
@@ -208,7 +208,7 @@ public class menu extends javax.swing.JFrame {
             f.setSelected(true);
             f.getDesktopPane().getDesktopManager().deiconifyFrame(f);
             f.getDesktopPane().getDesktopManager().maximizeFrame(f);
-            f.getDesktopPane().getDesktopManager().minimizeFrame(f);
+            //f.getDesktopPane().getDesktopManager().minimizeFrame(f);
             setExtendedState(MAXIMIZED_BOTH);
         } catch (SQLException ex) {
             Logger.getLogger(menu.class.getName()).log(Level.SEVERE, null, ex);
@@ -235,7 +235,7 @@ public class menu extends javax.swing.JFrame {
         f.setSelected(true);
             f.getDesktopPane().getDesktopManager().deiconifyFrame(f);
             f.getDesktopPane().getDesktopManager().maximizeFrame(f);
-            f.getDesktopPane().getDesktopManager().minimizeFrame(f);
+            //f.getDesktopPane().getDesktopManager().minimizeFrame(f);
         } catch (SQLException ex) {
             Logger.getLogger(menu.class.getName()).log(Level.SEVERE, null, ex);
         } catch (PropertyVetoException ex) {
@@ -263,7 +263,7 @@ public class menu extends javax.swing.JFrame {
         f.setSelected(true);
             f.getDesktopPane().getDesktopManager().deiconifyFrame(f);
             f.getDesktopPane().getDesktopManager().maximizeFrame(f);
-            f.getDesktopPane().getDesktopManager().minimizeFrame(f);
+            //f.getDesktopPane().getDesktopManager().minimizeFrame(f);
         } catch (SQLException ex) {
             Logger.getLogger(menu.class.getName()).log(Level.SEVERE, null, ex);
         } catch (PropertyVetoException ex) {
